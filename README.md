@@ -13,17 +13,3 @@ In companies it is hard to track:
 who uses equipment
 which equipment is free
 which one is already assigned
-This API solves this problem by storing everything in database and controlling assignment logic.
- Models
-Equipment
-name
-serial_number (unique)
-is_assigned (True/False)
-created_at
-Assignment
-equipment (ForeignKey)
-assigned_to
-assigned_at
-When equipment is assigned:
-new Assignment is created
-is_assigned becomes True
